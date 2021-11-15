@@ -1,0 +1,309 @@
+/******f************
+    
+    Project 1 Stylesheet
+    Name: Andy Soutcharith
+    Date: 2021-10-08
+    Description: Styles for webpage.
+
+*******************/
+body {
+    background-color: lightgray;
+}
+
+#content {
+    width: 1100px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    font-family: 'Verdana', 'sans-serif';
+    box-shadow: 0px 0px 3px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.top-links li a:hover, .top-links li a:focus, nav ul li a:hover, nav ul li a:focus {
+    color: rgb(40, 177, 177);
+    text-shadow: 1px 1px black;
+}
+
+.top-links {
+    display: flex;
+    margin-top: auto;
+    margin: 0;
+    margin-bottom: 3px;
+    margin-top: auto;
+    list-style-type: none;
+}
+
+    .top-links li a {
+        color: #005ae2;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .top-links li:not(:last-child) {
+        border-right: 1px solid #005ae2;
+        margin-right:10px;
+        padding-right:10px;
+    }
+
+ol {
+    list-style-type: none;
+}
+
+input {
+    width: 90px;
+}
+
+input:focus {
+    background-color: whitesmoke;
+}
+
+.space-image {
+    font-family: 'Lato';
+    background: url('images/headerBackground.jpg');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    height: 273px;
+    display: flex;
+    margin-bottom: -2px;
+}
+
+.space-image h1, .space-image h3{
+    color: white;
+}
+
+.space-image h1 {
+    padding-left: 40px;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
+.space-image h3 {
+    padding-right: 40px;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+
+nav {
+    background: #c5deea;
+    background: -moz-linear-gradient(top,  #c5deea 0%, #8abbd7 31%, #066dab 100%);
+    background: -webkit-linear-gradient(top,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
+    background: linear-gradient(to bottom,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+    nav ul li:not(:last-child) {
+        border-right: 1px solid darkblue;
+        padding-right:10px;
+    }
+
+    nav ul li:not(:first-child) {
+        border-left: 1px solid aquamarine;
+        padding-left:10px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+    }
+
+#middle-content {
+    display: flex;
+}
+
+aside {
+    width: 250px;
+    font-size: 15px;
+    font-weight: bolder;
+    flex-shrink: 0;
+}
+
+    aside ul {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 40px;
+        list-style-position: inside;
+    }
+
+    aside ul li a:hover, aside ul li a:focus {
+        color: rgb(69, 77, 77);
+        text-shadow: 1px 1px black;
+    }
+
+    aside ul li:first-child {
+        list-style-type: none;
+    }
+
+    aside ul li {
+        background: #f2f5f6;
+        background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+        background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+        background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+        padding: 8px 10px;
+
+    }
+
+    aside ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    aside img {
+        float: right;
+        margin-top: 10px;
+        margin-right: 5px;
+        height: 50px;
+    }
+
+    aside p {
+        border-top: 1px solid lightgray;
+        color: gray;
+        line-height: 20px;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+
+#about-hayden ul {
+    margin: 7px;
+    padding: 0;
+}
+
+    #about-hayden ul li {
+        list-style-type: none;
+        font-weight: bold;
+    }
+
+    #about-hayden ul li a {
+        text-decoration: none;
+        color: #005ae2;
+    }
+
+    #about-hayden ul li a:hover, #about-hayden ul li a:focus {
+        color: orange;
+        text-shadow: 1px 1px black;
+    }
+
+    #about-hayden h2 {
+        margin-left: 20px;
+        margin-bottom: 0;
+        border-bottom: 2px solid lightgray;
+        padding-right: 700px;
+        padding-left: 1px;
+    }
+
+    #about-hayden h3 {
+        font-weight: bolder;
+        margin: 0;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    #about-hayden .rover-with-text {
+        width: 290px;
+        float: right;
+        margin-right: 20px;
+        margin-left: 10px;
+        border: 1px solid lightgray;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #about-hayden .rover-with-text p {
+        margin: 0;
+        line-height: 15px;
+    }
+
+
+.content-paragraphs {
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.content-paragraphs p a {
+        text-decoration: none;
+        color: #005ae2;
+    }
+
+.content-paragraphs p a:hover, .content-paragraphs p a:focus {
+        color: orange;
+        text-shadow: 1px 1px black;
+    }
+
+    #about-hayden .content-paragraphs img {
+        width: 290px;
+        border: 1px solid black;
+    }
+
+.middle-content-list {
+    margin-left: 50px;
+}
+
+    .middle-content-list li {
+        margin-bottom: 30px;
+    }
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(white, #ebe8e8);
+    border-radius: 10px;
+    align-items: center;
+    margin: 100px -15px -15px -15px;
+    font-size: 13px;
+}
+
+    #footer ul {
+        display: flex;
+        margin: 0;
+    }
+
+    #footer ul li {
+        list-style-type: none;
+    }
+
+    #footer ul li:not(:last-child) {
+        margin: 0;
+        padding: 0;
+        border-right: 1px solid black;
+        margin-right:10px;
+        padding-right:10px;
+    }
+
+    #footer ul:last-child {
+        color: gray;
+        margin-bottom: 5px;
+    }
+
+
+    #footer ul li a {
+        text-decoration: none;
+        color: #005ae2;
+    }
+
+    #footer ul li a:hover, #footer ul li a:focus {
+        color: orange;
+        text-shadow: 1px 1px rgb(133, 130, 130);
+    }
